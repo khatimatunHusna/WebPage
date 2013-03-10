@@ -4,24 +4,43 @@
 </head>
 <body style="background-color:brown">
 <form action="Register.php" method="post">
-<h1 style="font-family:Times"; align="center">FORM REGISTER</h1>
+<h1 style="font-family:Times"; align="center">REGISTRY FORM</h1>
 <br></br>
 <font face="Times, Verdana, Garamond" size="5"><strong>Biodata</strong></font>
 <table border="0">
 
 <tr>
-    <td>Nama Lengkap </td>
+    <td>First Name</td>
     <td>:</td>
-    <td><input type="text" name="Nama" size="25" /></td>
+    <td><input type="text" name="fstname" size="25" /></td>
+    <td>Last Name</td>
+    <td>:</td>
+    <td><input type="text" name="lastnamea" size="25" /></td>
 </tr>
 
 <tr>
-    <td>Tempat/Tanggal Lahir </td>
+    <td>Date Birth</td>
     <td>:</td>
-    <td><input type="text" name="TTL" size="25" /> /
+    <td><input type="text" name="DB" size="25" /> /
 
-<select name="TTL">
-  <option>tanggal</option>
+<select name="DB">
+  <option>Month</option>
+  <option>Januari</option>
+  <option>Februari</option>
+  <option>Maret</option>
+  <option>April</option>
+  <option>Mei</option>
+  <option>Juni</option>
+  <option>Juli</option>
+  <option>Agustus</option>
+  <option>September</option>
+  <option>Oktober</option>
+  <option>November</option>
+  <option>Desember</option>
+</select>
+
+<select name="DB">
+  <option>Date</option>
   <option>1</option>
   <option>2</option>
   <option>3</option>
@@ -54,23 +73,9 @@
   <option>30</option>
   <option>31</option>
 </select>
-<select name="TTL">
-  <option>bulan</option>
-  <option>Januari</option>
-  <option>Februari</option>
-  <option>Maret</option>
-  <option>April</option>
-  <option>Mei</option>
-  <option>Juni</option>
-  <option>Juli</option>
-  <option>Agustus</option>
-  <option>September</option>
-  <option>Oktober</option>
-  <option>November</option>
-  <option>Desember</option>
-</select>
-<select name="TTL">
-  <option>Tahun</option>
+
+<select name="DB">
+  <option>Year</option>
   <option>2012</option>
   <option>2011</option>
   <option>2010</option>
@@ -98,26 +103,29 @@
 </tr>
 
 <tr>
-    <td>Alamat Lengkap</td>
+    <td>Current Address</td>
     <td>:</td>
     <td><textarea cols="30" rows="5"></textarea>
 </tr>
 
 <tr>
-    <td>Jenis Kelamin</td>
+    <td>Sex</td>
     <td>:</td>
-    <td><input type="radio" name="Kelamin" value="Laki-laki" />
-    Laki-Laki
-    <input type="radio" name="Kelamin" value="Perempuan" />
-    Perempuan</td>
+    <td><input type="radio" name="sex" value="Male" />
+    Male
+    <input type="radio" name="sex" value="Female" />
+    Female
+    <input type="radio" name="sex" value="Other" />
+    Other
+</td>
 </tr>
 
 <tr>
-    <td>Agama</td>
+    <td>Religion</td>
     <td>:</td>
-    <td><select name="Agama">
+    <td><select name="Religion">
     <option>Islam</option>
-    <option>Kristen</option>
+    <option>Christian</option>
     <option>Hindu</option>
     <option>Budha</option>
     <option>Kong Hu Cu</option>
@@ -125,162 +133,18 @@
 </tr>
 
 <tr>
-    <td>Kewarganegaraan </td>
+    <td>Nationality</td>
     <td>:</td>
-    <td><input type="text" name="Negara" size="25" /></td>
+    <td><input type="text" name="Nation" size="25" /></td>
 </tr>
 
-<tr>
-    <td>Hobi</td>
-    <td>:</td>
-    <td>
-	<input type="checkbox" name="hobi" value="Membaca" />
-    Membaca
-	<input type="checkbox" name="hobi" value="Menulis" />
-    Menulis
-    <input type="checkbox" name="hobi" value="Komputer" />
-    Komputer
-    <input type="checkbox" name="hobi" value="Musik" />
-    Musik
-    <input type="checkbox" name="hobi" value="Travel" />
-    Travel
-    <input type="checkbox" name="hobi" value="Lain-Lain" />
-    Lain-Lain</td>
-</tr>
 </table>
 <hr></hr>
-<br/>
-<font face="Times, Verdana, Garamond" size="4"><strong>Riwayat Pendidikan</strong></font>
-<table border="0">
-<tr>
-    <td>Pendidikan</td>
-	<td>: 1.</td>
-    <td><select name="select">
-	<option>Pendidikan</option>
-	<option>Taman Kanak-kanak/TK</option>
-	<option>Sekolah Dasar/SD</option>
-	<option>Sekolah Menengah Pertama/SMP</option>
-	<option>Sekolah Menegah Atas/SMA</option>
-	<option>Perguruan Tinggi/Universitas</option>
-	<option>Informal</option>
-	<option>Lain-lain</option>
-	</select>
-	<input type="text" name="Pendidikan" size="25" />
-	</td>
-</tr>
 
-<tr>
-    <td></td>
-	<td>  2.</td>
-    <td><select name="select">
-	<option>Pendidikan</option>
-	<option>Taman Kanak-kanak/TK</option>
-	<option>Sekolah Dasar/SD</option>
-	<option>Sekolah Menengah Pertama/SMP</option>
-	<option>Sekolah Menegah Atas/SMA</option>
-	<option>Perguruan Tinggi/Universitas</option>
-	<option>Informal</option>
-	<option>Lain-lain</option>
-	</select>
-	<input type="text" name="Pendidikan" size="25" />
-	</td>
-</tr>
-
-<tr>
-    <td></td>
-	<td>  3.</td>
-    <td><select name="select">
-	<option>Pendidikan</option>
-	<option>Taman Kanak-kanak/TK</option>
-	<option>Sekolah Dasar/SD</option>
-	<option>Sekolah Menengah Pertama/SMP</option>
-	<option>Sekolah Menegah Atas/SMA</option>
-	<option>Perguruan Tinggi/Universitas</option>
-	<option>Informal</option>
-	<option>Lain-lain</option>
-	</select>
-	<input type="text" name="Pendidikan" size="25" />
-	</td>
-</tr>
-
-<tr>
-    <td></td>
-	<td>  4.</td>
-    <td><select name="select">
-	<option>Pendidikan</option>
-	<option>Taman Kanak-kanak/TK</option>
-	<option>Sekolah Dasar/SD</option>
-	<option>Sekolah Menengah Pertama/SMP</option>
-	<option>Sekolah Menegah Atas/SMA</option>
-	<option>Perguruan Tinggi/Universitas</option>
-	<option>Informal</option>
-	<option>Lain-lain</option>
-	</select>
-	<input type="text" name="Pendidikan" size="25" />
-	</td>
-</tr>
-
-<tr>
-    <td></td>
-	<td>  5.</td>
-    <td><select name="select">
-	<option>Pendidikan</option>
-	<option>Taman Kanak-kanak/TK</option>
-	<option>Sekolah Dasar/SD</option>
-	<option>Sekolah Menengah Pertama/SMP</option>
-	<option>Sekolah Menegah Atas/SMA</option>
-	<option>Perguruan Tinggi/Universitas</option>
-	<option>Informal</option>
-	<option>Lain-lain</option>
-	</select>
-	<input type="text" name="Pendidikan" size="25" />
-	</td>
-</tr>
-
-<tr>
-    <td></td>
-	<td>  6.</td>
-    <td><select name="select">
-	<option>Pendidikan</option>
-	<option>Taman Kanak-kanak/TK</option>
-	<option>Sekolah Dasar/SD</option>
-	<option>Sekolah Menengah Pertama/SMP</option>
-	<option>Sekolah Menegah Atas/SMA</option>
-	<option>Perguruan Tinggi/Universitas</option>
-	<option>Informal</option>
-	<option>Lain-lain</option>
-	</select>
-	<input type="text" name="Pendidikan" size="25" />
-	</td>
-</tr>
-
-<tr>
-    <td></td>
-	<td>  7.</td>
-    <td><select name="select">
-	<option>Pendidikan</option>
-	<option>Taman Kanak-kanak/TK</option>
-	<option>Sekolah Dasar/SD</option>
-	<option>Sekolah Menengah Pertama/SMP</option>
-	<option>Sekolah Menegah Atas/SMA</option>
-	<option>Perguruan Tinggi/Universitas</option>
-	<option>Informal</option>
-	<option>Lain-lain</option>
-	</select>
-	<input type="text" name="Pendidikan" size="25" />
-	</td>
-</tr>
-</table>
-
-<hr></hr>
-<br/>
-<font face="Times, Verdana, Garamond" size="4"><strong>Riwayat Organisasi</strong></font>
-<table border="0">
-<tr>
-    <td>Organisasi </td>
-    <td>:</td>
-    <td><textarea cols="30" rows="8"></textarea>
-</tr>
+</li>
+<li><label for="imgUpload">Photo</label>
+<input type="file" name="imgUpload" value="" id="imgUpload"/>
+</li>
 
 <tr>
     <td colspan="2"></td>
